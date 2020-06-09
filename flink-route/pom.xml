@@ -1,38 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
-         xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.respect</groupId>
-        <artifactId>iprocess</artifactId>
+        <groupId>com.respect.flink</groupId>
+        <artifactId>iprocess-flink</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>iprocess-dao</artifactId>
-    <name>iprocess-dao</name>
+    <artifactId>flink-route</artifactId>
+    <name>flink-route</name>
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
-
-        <dependency>
-            <groupId>com.respect</groupId>
-            <artifactId>iprocess-domain</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-
-        <!--MySQL 驱动-->
         <!--<dependency>-->
-            <!--<groupId>mysql</groupId>-->
-            <!--<artifactId>mysql-connector-java</artifactId>-->
-            <!--<version>5.1.17</version>-->
+            <!--<groupId>com.jd.pop.crm</groupId>-->
+            <!--<artifactId>pop-crm-client</artifactId>-->
+            <!--<version>${crm.client.version}</version>-->
         <!--</dependency>-->
-
     </dependencies>
+
     <build>
-        <finalName>iprocess-dao-${version}</finalName>
+        <finalName>flink-route-${version}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -65,4 +57,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>

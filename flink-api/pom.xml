@@ -5,28 +5,28 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.respect</groupId>
-        <artifactId>iprocess</artifactId>
+        <groupId>com.respect.flink</groupId>
+        <artifactId>iprocess-flink</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>iprocess-service</artifactId>
-    <name>iprocess-service</name>
+    <artifactId>flink-api</artifactId>
+    <name>flink-api</name>
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
 
-        <!--<dependency>-->
-            <!--<groupId>commons-lang</groupId>-->
-            <!--<artifactId>commons-lang</artifactId>-->
-            <!--<version>2.4</version>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>com.respect.flink</groupId>
+            <artifactId>flink-client</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
 
     </dependencies>
 
     <build>
-        <finalName>iprocess-service-${version}</finalName>
+        <finalName>flink-api-${projectVersion}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
