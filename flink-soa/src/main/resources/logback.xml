@@ -6,7 +6,7 @@
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
             <layout class="ch.qos.logback.classic.PatternLayout">
-                <pattern>${pop-crm.log.ConversionPattern}</pattern>
+                <pattern>${flink-iprocess.log.ConversionPattern}</pattern>
             </layout>
             <charset>UTF-8</charset>
         </encoder>
@@ -17,27 +17,27 @@
 
     <!-- 增量日志 -->
     <appender name="INCREMENT_INFO" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${pop-crm.log.path}/pop-crm-increment.log</file>
+        <file>${flink-iprocess.log.path}/flink-iprocess-increment.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>${pop-crm.log.path}/pop-crm-increment.log.%d{yyyy-MM-dd}</fileNamePattern>
-            <maxHistory>${pop-crm.log.maxHistory}</maxHistory>
-            <totalSizeCap>${pop-crm.log.totalSizeCap}</totalSizeCap>
+            <fileNamePattern>${flink-iprocess.log.path}/flink-iprocess-increment.log.%d{yyyy-MM-dd}</fileNamePattern>
+            <maxHistory>${flink-iprocess.log.maxHistory}</maxHistory>
+            <totalSizeCap>${flink-iprocess.log.totalSizeCap}</totalSizeCap>
         </rollingPolicy>
         <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
             <layout class="ch.qos.logback.classic.PatternLayout">
-                <pattern>${pop-crm.log.ConversionPattern}</pattern>
+                <pattern>${flink-iprocess.log.ConversionPattern}</pattern>
             </layout>
             <charset>GBK</charset>
         </encoder>
     </appender>
 
-    <logger name="pop.crm.increment" additivity="false"  level="${pop-crm.log.level}">
+    <logger name="pop.iprocess.increment" additivity="false"  level="${flink-iprocess.log.level}">
         <appender-ref ref="INCREMENT_INFO"/>
-        <appender-ref ref="${pop-crm.log4j.root.appender.ref}"/>
+        <appender-ref ref="${flink-iprocess.log4j.root.appender.ref}"/>
     </logger>
 
-    <root level="${pop-crm.log.level}">
-        <appender-ref ref="${pop-crm.log4j.root.appender.ref}"/>
+    <root level="${flink-iprocess.log.level}">
+        <appender-ref ref="${flink-iprocess.log4j.root.appender.ref}"/>
         <!--<appender-ref ref="FILE-DEBUG"/>-->
     </root>
 
