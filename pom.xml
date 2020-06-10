@@ -27,8 +27,8 @@
         <maven-source-plugin.version>3.0.0</maven-source-plugin.version>
     </properties>
     <scm>
-        <connection>scm:git:http://source.jd.com/app/pop-crm.git</connection>
-        <url>http://source.jd.com/app/pop-crm.git</url>
+        <connection>scm:git:https://github.com/iProcess/iProcessFlink.git</connection>
+        <url>https://github.com/iProcess/iProcessFlink.git</url>
     </scm>
     <distributionManagement>
         <repository>
