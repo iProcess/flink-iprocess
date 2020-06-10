@@ -10,8 +10,8 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>flink-api</artifactId>
-    <name>flink-api</name>
+    <artifactId>flink-demo</artifactId>
+    <name>flink-demo</name>
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
 
@@ -19,14 +19,14 @@
 
         <dependency>
             <groupId>com.respect.flink</groupId>
-            <artifactId>flink-client</artifactId>
+            <artifactId>flink-basic</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
     </dependencies>
 
     <build>
-        <finalName>flink-api-${projectVersion}</finalName>
+        <finalName>flink-demo-${projectVersion}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

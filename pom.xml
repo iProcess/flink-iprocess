@@ -43,13 +43,9 @@
         </snapshotRepository>
     </distributionManagement>
     <modules>
-        <module>flink-api</module>
-        <module>flink-client</module>
-        <module>flink-dao</module>
-        <module>flink-domain</module>
-        <module>flink-route</module>
+        <module>flink-demo</module>
+        <module>flink-basic</module>
         <module>flink-rpc</module>
-        <module>flink-service</module>
         <module>flink-soa</module>
     </modules>
     <dependencies>
