@@ -12,18 +12,7 @@
 
     <properties>
         <projectVersion>${version}</projectVersion>
-        <struts.version>2.3.16.2</struts.version>
-        <spring.version>3.2.17.RELEASE</spring.version>
-        <ibatis.version>2.3.4.726</ibatis.version>
-        <hbase.version>0.94.14</hbase.version>
-        <zookeeper.version>3.4.5</zookeeper.version>
-        <curator.version>2.9.1</curator.version>
         <lombok.version>1.16.6</lombok.version>
-        <druid.version>1.0.18</druid.version>
-        <druid.notice.version>1.0-SNAPSHOT</druid.notice.version>
-        <slf4j.version>1.7.21</slf4j.version>
-        <logback.version>1.1.7</logback.version>
-        <commons-lang3.version>3.3.2</commons-lang3.version>
         <maven-source-plugin.version>3.0.0</maven-source-plugin.version>
     </properties>
     <scm>
@@ -46,7 +35,7 @@
         <module>flink-demo</module>
         <module>flink-basic</module>
         <module>flink-rpc</module>
-        <module>flink-soa</module>
+        <!--<module>flink-soa</module>-->
     </modules>
     <dependencies>
 

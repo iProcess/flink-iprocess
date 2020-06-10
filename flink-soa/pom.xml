@@ -72,7 +72,7 @@
 
     <profiles>
         <profile>
-            <id>development</id>
+            <id>dev</id>
             <properties>
 
                 <!--数据库连接的方式-->
@@ -134,7 +134,7 @@
         </profile>
 
         <profile>
-            <id>production</id>
+            <id>prod</id>
             <properties>
 
                 <!--数据库连接的方式-->
