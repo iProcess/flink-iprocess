@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.respect.flink</groupId>
-    <artifactId>iprocess-flink</artifactId>
-    <name>iProcessFlink</name>
+    <artifactId>flink-iprocess</artifactId>
+    <name>flink-iprocess</name>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
