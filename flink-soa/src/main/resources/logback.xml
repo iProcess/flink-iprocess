@@ -31,7 +31,7 @@
         </encoder>
     </appender>
 
-    <logger name="pop.iprocess.increment" additivity="false"  level="${flink-iprocess.log.level}">
+    <logger name="p.iprocess.increment" additivity="false"  level="${flink-iprocess.log.level}">
         <appender-ref ref="INCREMENT_INFO"/>
         <appender-ref ref="${flink-iprocess.log4j.root.appender.ref}"/>
     </logger>
